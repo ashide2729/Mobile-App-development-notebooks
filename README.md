@@ -40,7 +40,7 @@ Google has provided a checklist which lists down the criterion for a website to 
 <ul>
   <li>Choose Native if performance and access to device hardware features are important.</li>
 
-  <li>Choose PWA if you are making an e-commerce website+app.<li>
+  <li>Choose PWA if you are making an e-commerce website+app.</li>
 
   <li>Choose Compiled or Hybrid if you and your team are comfortable with web technologies and want to build apps in a limited time.</li>
 
