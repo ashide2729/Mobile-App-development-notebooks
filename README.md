@@ -19,11 +19,11 @@ If you want to use web technologies then hybrid apps is the way to go.
 
 General steps to make a hybrid app.
 
-                  -------> Use framework  ------> Use Ionic framework  ---- 
-                  |   like Angular, React, Vue     which uses cordova      |
-HTML, CSS, JS ----                                                         ----> Build iOS and android apps
-                  |                                                        |
-                  -------> Use Cordova ------------------------------------
+                 -------> Use Angular, React, Vue ------> Use Ionic  ---- 
+                 |                                                       |
+HTML, CSS, JS ----                                                       ----> Build iOS and android apps
+                 |                                                       |
+                 ----------------> Use Cordova ---------------------------
                   
 #### Compiled to Native
 
