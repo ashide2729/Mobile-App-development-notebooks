@@ -1,0 +1,39 @@
+A layout consists of multipls view and view groups with one top view in the hierarchy.
+ViewGroups:
+Scroll view - ViewGroup to use when you need to scroll a single view vertically.
+LinearLayout Horizontal - ViewGroup to use for a strictly horizontal list-style arrangement of views.
+LinearLayout Vertical - ViewGroup to use for a strictly vertical list-style arrangement of views.
+ConstraintLayout - A ViewGroup where elements can be arranged freely, are placed by the system based on constraints, and may adapt in size based on screen size and orientation.
+
+Parts of layout editor:
+
+Project View, Andorid - Shows the project hierarchy in an arrangement that is more intuitive for Android projects than the raw file hierarchy.
+Design and Text tabs - Lets you switch between visual and code representation of the screen layout.
+Palette - Lists common views for UI elements and layouts that you can add to the layout design.
+Component tree - Shows the layout hierarchy as a tree of views.
+Design Editor - Shows a preview of your screen and a blueprint version.
+Attributes pane - Shows attributes of the currently selected view.
+
+For data binding using Binding class can helps bind view objects to the activity in compile time instead of runtime.
+Efficient way for data binding is create data class and bind the data objects to the views.
+
+Constraints
+Absolute positioning - A fixed definition for positioning of views
+Relative positioning - A more flexible positioning with respect to other views present.
+
+Ratios - Ratios helps define a flexible sizing of views. 
+
+Chaining - Link together views to behave as a group where the views are linked through a bi-directional connection. 
+
+Different available chains:
+Spread chain
+
+Packed chain
+
+Spread inside chain
+
+Packed chain with bias
+
+Weighted chain
+
+If you join different elements through those dots on them in the Design View then they chain and move with each other if anyone is moved.

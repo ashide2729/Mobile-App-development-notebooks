@@ -1,0 +1,28 @@
+Android Navigation is done by replacing Fragments in the activity. An acitvity can have multiple fragments.
+
+Fragments are like views but they are reusable UI components.
+In fragments we manually inflate the content view.
+
+Activity extends Context class but fragments do not and that is why the we need to extend Context class to use app data such as string and image resources which are typically linked with Context.
+
+Navigation can be done between different activities and between different fragments in an activity too.
+While navigating through activity the activities afre arranged in a stack called BackStack.
+Fragments can have a similar stack but the stack is contained within the activity and is controlled by the Fragment manager.
+
+To create a fragment:
+File -> New -> Fragment
+
+Add the fragment into the activity main layout.
+
+Steps to navigating :
+
+Add the navigation graph resource 
+File -> New -> Android resource file -> Resource type - navigation
+
+Define a fragment as navhost
+
+In the activity main fragment define which navGraph to use
+
+Add fragments to navGraph using UI and connecting them for path to follow
+
+In the title fragment class define the action listener to navigate and define the NavController to navigate to a fragment layout by using id.

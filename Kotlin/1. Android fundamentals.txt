@@ -1,0 +1,58 @@
+Kotlin is a cross-platform, statically typed, general-purpose programming language with type inference. Kotlin is designed to interoperate fully with Java, and the JVM version of its standard library depends on the Java Class Library, but type inference allows its syntax to be more concise. [Wikipedia]
+
+Working on a Kotlin project is similar to working on a Java Android project specially if you are creating the project on Android Studio where the basic setup, development and running of app is nearly the same. 
+
+The major difference arises between the syntax and how the code is written while developing a full fledged android app.
+
+The basic app anatomy:
+
+Instead of talking about all the files we will talk about the ones which we visit often than others during the app development.
+
+app folder:
+ This folder contains the src folder which holds the major files and folders to write code on.
+ The src folder has androidTest, main and test folders where the test folders are used for testing phases of a build.
+ The main folder contains:
+ 	java folder : holding the project folder contains the ActivityMain file which is also the starting point for the app
+	res : it contains the resources like layouts(view), images, audio files etc. that are used with the project 
+	AndroidManifest.xml : This contains permissions to interact with the hardware features.
+	
+ The folder structure also contains various gradle scripts, these scripts are used to build your app before you can run it on a device or an emulator.
+
+Activity is a core android class. Activity defines what the app should do. MainActivity is the entry point of any app android app.
+
+activity_main.xml defines what the specific activity should look like and in this the main activity.
+
+both the activity and activity xml interact to dynamicall change the UI and run logic.
+
+The activity_main.xml defines which Activity should be the launching point of the application by defualt it is .MainActivity.
+
+onCreate should always be overriden and the setContentView defines which layout the activity to use.
+
+To find an element and reference it in the Activity class ids are created for each element to identify and use it.
+When the id is created for any element android studio automatically creates an integer constant with that id name in the R class.
+To get the view object use findViewById(R.id.<name>) to get reference to the view object from Tree hierarchy.
+This reference can be stored as a variable which is then used to call different methods on it for different actions.
+
+Writing a code is not important but writing an efficient code is where we concentrate on better power and performance.
+There are various key points while writing a code like 
+initialising variables beforehand, 
+using features like lateint instead of null, 
+loading of images in different parts of code,
+using different namespaces(place where we define dummy content)
+most importantly if we run processes at compile time instead of run time it can help speed up the app 
+and much more..
+
+There are two gradle files that comes in the project - one that is present in the project and the other module specific.
+Modules are different set of codes to derive a specific fuctionality. In normal android app we have only one module(app) but reall world apps have multiple modules that interact with each other to run the whole app.
+
+The build.gradle file:
+
+Repository - remote server to download external code for use
+Dependencies - external code or libraries that the project depends on
+
+Different API levels have different OS setup to interact with and that is why it is not a good practice to include support for all android API leveles(Android versions). Although it is possible to write functionalities specific to an API level depending by using different if conditions based on the API level.
+
+In 2018, Android Jetpack was released which is a collection of libraries and also extends on tip of support library.
+AndroidX is the namespace for android jetpack, so all the import using AndroidX uses jetpack libraries
+
+SVGs are the best deals for app performance in many terms as compared to other formats.
